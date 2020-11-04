@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories Match</title>
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap-reboot.css">
+    <script src="bootstrap-4.0.0-dist/js/match.js"></script>
+
+</head>
+<body onload="pictureCompare('picture1Id', 'picture0Id', 'nextId', 'firstAccessory', 'secondAccessory', 'contactId')">
+    
+    <nav class="w-100 fixed-top " style="background-color: rgb(11, 11, 100); height: 50px;">
+        <p class="text-center text-uppercase font-weight-bold text-white py-2">accessories match</p>
+    </nav>
+    
+    <p class="text-uppercase font-weight-bold text-center" style="margin-top: 50px;">
+        Which accessory best match for valentine outfits?
+    </p>
+    <p class="font-weight-bold text-center">
+        Choose by clicking on any of the images.
+    </p>
+
+    <div class="row" style="margin: 20px;  text-align:center;">
+        <div class="col-lg-6 col-sm-6 col-md-6 col-xl-6">
+            <figure class="figure">
+                <img class="w-75 figure-img img-fluid rounded img-thumbnail" data-src="holder.js/800x400?auto=yes&bg=777&fg=555&text=First slide" src="images/spiralBeads.jpg" alt="pictureFalse" id="picture1Id" style="cursor: pointer;">
+                <figcaption class="figure-caption" style="color: #000;">
+                    <h3 id="firstAccessory"></h3>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="col-lg-6 col-sm-6 col-md-6 col-xl-6">
+            <figure class="figure">
+                <img class="w-75 figure-img img-fluid rounded img-thumbnail" data-src="holder.js/800x400?auto=yes&bg=777&fg=555&text=First slide" src="images/facinatorBlack.jpg" alt="pictureTrue" id="picture0Id" style="cursor: pointer;">
+                <figcaption class="figure-caption" style="color: #000;">
+                    <h3 id="secondAccessory"></h3>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+  
+    <p class="text-uppercase font-weight-bold text-center">  
+        <a href="matchvi.html" id="nextId" class="btn btn-success" target="_self" rel="noopener noreferrer">next</a>
+    </p>
+    
+
+    <script src="bootstrap-4.0.0-dist/js/jquery.js" integrity="sha384q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
+    <script src="bootstrap-4.0.0-dist/js/popper.js"></script>
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+</body>
+<footer>
+    <p class="text-uppercase font-weight-bold text-center">
+        from festa signatures beads &copy;2020, <a href="" target="_self" rel="noopener noreferrer" style="text-decoration: none;" id="contactId">contact us.</a>
+    </p>
+</footer>
+
+</html>

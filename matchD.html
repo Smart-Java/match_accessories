@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories Match</title>
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap-reboot.css">
+    <script src="bootstrap-4.0.0-dist/js/match.js"></script>
+</head>
+<body onload="pictureCompare('picture1Id', 'picture0Id', 'nextId', 'turban', 'firstAccessory', 'secondAccessory')">
+    
+    <nav class="w-100 fixed-top " style="background-color: rgb(11, 11, 100); height: 50px;">
+        <p class="text-center text-uppercase font-weight-bold text-white py-2">accessories match</p>
+    </nav>
+    
+    <p class="text-uppercase font-weight-bold text-center" style="margin-top: 50px;">
+        What's your taste for accessories? What's your taste for accessories match? <br> share with us please.
+    </p>
+    <p class="font-weight-bold text-center font-italic">
+         improving your beauty and fashion with the right accessories.
+    </p>
+
+   <form action="contactMail.php" method="post" class="">
+       <div class="input-group form-group">
+        <label for="userEmailId" class="form-text  mr-3">Email Addresss: </label>
+        <input type="email" name="userEmailId" id="userEmailId" class="form-control" required> 
+       </div>
+        
+       <div class="input-group form-group">
+        <label for="subjectMailId" class="form-text  mr-3">Subject:</label>
+        <input type="text" name="subjectMailId" id="subjectMailId" class="form-control" value="Accessory Taste" required> 
+       </div>
+       
+       <div class="input-group form-group">
+        <label for="messageId" class="form-text  mr-3">Message:</label>
+        <textarea name="messageId" id="messageId" cols="30" rows="10" class="form-control" required></textarea> 
+       </div>
+       <p class="text-center">
+        <input type="submit" value="submit" class="btn btn-success" onclick="return this.diasbled = true">
+       </p>
+   </form>
+    
+    <script src="bootstrap-4.0.0-dist/js/jquery.js" integrity="sha384q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
+    <script src="bootstrap-4.0.0-dist/js/popper.js"></script>
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+</body>
+<footer>
+    <p class="text-uppercase font-weight-bold text-center">
+        from festa signatures beads &copy;2020, <a href="contactUs.html" target="_self" rel="noopener noreferrer" style="text-decoration: none;">contact us.</a>
+    </p>
+</footer>
+
+</html>

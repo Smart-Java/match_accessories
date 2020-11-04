@@ -1,0 +1,165 @@
+<?php
+include('server.php')
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories Match</title>
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap-reboot.css">
+    <script src="bootstrap-4.0.0-dist/js/match.js"></script>
+</head>
+<body onload="pictureCompare('picture1Id', 'picture0Id', 'nextId', 'turban', 'firstAccessory', 'secondAccessory')">
+    
+    <nav class="w-100 fixed-top " style="background-color: rgb(11, 11, 100); height: 50px;">
+        <p class="text-center text-uppercase font-weight-bold text-white py-2">accessories match</p>
+    </nav>
+    
+    <p class="text-uppercase font-weight-bold text-center" style="margin-top: 50px;">
+        please fill in the form for quick survey and ways to serve your better, before playing the accessories match game. 
+    </p>
+    <p class="font-weight-bold text-center font-italic">
+        improving your beauty and fashion with the right accessories.
+    </p>
+
+   <form action="server.php" method="post" class="">
+       <div class="input-group form-group">
+        <label for="emailId" class="form-text  mr-3">Email Addresss: </label>
+        <input type="email" name="emailId" id="emailId" class="form-control" required> 
+       </div>
+        
+       <div class="input-group form-group">
+        <label for="firstNameId" class="form-text  mr-3">First Name:</label>
+        <input type="text" name="firstNameId" id="firstNameId" class="form-control" required> 
+       </div>
+       
+       <div class="input-group form-group">
+        <label for="ageGroupId" class="form-text  mr-3">Age Group: </label>
+        <select name="ageGroupId" id="ageGroupId" class="form-control" required>
+            <option value="0 - 25 yrs">0 - 25 yrs</option>
+            <option value="26 - 50 yrs">26 - 50 yrs</option>
+            <option value="51 - 75 yrs">51 - 75 yrs</option>
+            <option value="76 - 100 yrs">76 - 100 yrs</option>
+        </select>
+       </div>
+
+       <div class="input-group form-group">
+        <label for="phoneId" class="form-text  mr-3">Phone Number:</label>
+        <input type="tel" name="phoneId" id="phoneId" class="form-control" required> 
+       </div>
+
+       <div class="input-group form-group">
+        <label for="birthdayId" class="form-text  mr-3">Birthday: </label>
+        <input type="date" name="birthdayId" id="birthdayId" class="form-control" required> 
+       </div>
+
+       <div class="input-group form-group">
+        <label for="festaBeadsId" class="form-text  mr-3">Have You Bought Any Accessory From Festa Signature Beads? </label>
+        <select name="festaBeadsId" id="festaBeadsId" class="form-control" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+       </div>
+
+       <div class="input-group form-group">
+        <label for="favouriteAccessoryId" class="form-text  mr-3">What's Your Favourite Accessory? </label>
+        <select name="favouriteAccessoryId" id="favouriteAccessoryId" class="form-control" required>
+            <option value="Turban">Turban</option>
+            <option value="Ankara Bags">Ankara Bags</option>
+            <option value="Ankara Headwears">Ankara Headwears</option>
+            <option value="Headbands">Headbands</option>
+            <option value="Beaded Accessories">Beaded Accessories</option>
+            <option value="Facinator">Facinator</option>
+            <option value="Turbanator">Turbanator</option>
+            <option value="Beaded Slippers">Beaded Slippers</option>
+            <option value="Beaded Jewelry">Beaded Jewelry</option>
+            <option value="Scarfinator">Scarfinator</option>
+            <option value="Autogele">Autogele</option>
+            <option value="Ankara Jewelry">Ankara Jewelry</option>
+            <option value="Ankara Waist Belt">Ankara Waist Belt</option>
+            <option value="Ankara Broonche">Ankara Broonche</option>
+            <option value="Halo Crown">Halo Crown</option>
+            <option value="Bags">Bags</option>
+        </select>
+       </div>
+
+       <div class="input-group form-group">
+        <label for="occassionId" class="form-text  mr-3">Which Occassion did you love putting on accessory? </label>
+        <select name="occassionId" id="occassionId" class="form-control" required>
+            <option value="none">None</option>
+            <option value="traditional">Traditional Occassion</option>
+            <option value="western">Western Occassion</option>
+            <option value="valentine">Valentine's Day</option>
+            <option value="westernWed">Western Wedding</option>
+            <option value="church">Church</option>
+            <option value="birthday">Birthday</option>
+        </select>
+       </div>
+
+       <div class="input-group form-group">
+        <label for="locationId" class="form-text  mr-3">Which location are you? </label>
+        <select name="locationId" id="locationId" class="form-control" required>
+            <option value="Abia">Abia</option>
+            <option value="Adamawa">Adawama</option>
+            <option value="Akwa-Ibom">Akwa-Ibom</option>
+            <option value="Anambra">Anambra</option>
+            <option value="Bauchi">Bauchi</option>
+            <option value="Bayelsa">Bayelsa</option>
+            <option value="Benue">Benue</option>
+            <option value="Bornu">Bornu</option>
+            <option value="Cross River">Cross River</option>
+            <option value="Delta">Delta</option>
+            <option value="Ebonyi">Ebonyi</option>
+            <option value="Edo">Edo</option>
+            <option value="Ekiti">Ekiti</option>
+            <option value="Enugu">Enugu</option>
+            <option value="Gombe">Gombe</option>
+            <option value="Imo">Imo</option>
+            <option value="Jigawa">Jigawa</option>
+            <option value="Kaduna">Kaduna</option>
+            <option value="Kano">Kano</option>
+            <option value="Kastina">Kastina</option>
+            <option value="Kebbi">Kebbi</option>
+            <option value="Kogi">Kogi</option>
+            <option value="Kwara">Kwara</option>
+            <option value="Lagos">Lagos</option>
+            <option value="Nasarawa">Nasarawa</option>
+            <option value="Niger">Niger</option>
+            <option value="Ogun">Ogun</option>
+            <option value="Ondo">Ondo</option>
+            <option value="Osun">Osun</option>
+            <option value="Oyo">Oyo</option>
+            <option value="Plateau">Plateau</option>
+            <option value="Rivers">Rivers</option>
+            <option value="Sokoto">Sokoto</option>
+            <option value="Taraba">Taraba</option>
+            <option value="Yobe">Yobe</option>
+            <option value="Zamfara">Zamfara</option>
+        </select>
+       </div>
+
+       <div class="input-group form-group">
+        <label for="commentId" class="form-text  mr-3">Give us your the reasons why you love accessories or not:</label>
+        <textarea name="commentId" id="commentId" cols="40" rows="2" class="form-control" required></textarea>
+       </div>
+
+       <p class="text-center">
+        <input type="submit" value="submit" name="submitId" class="btn btn-success" onclick="return this.diasbled = true">
+       </p>
+   </form>
+    
+    <script src="bootstrap-4.0.0-dist/js/jquery.js" integrity="sha384q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
+    <script src="bootstrap-4.0.0-dist/js/popper.js"></script>
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+</body>
+<footer>
+    <p class="text-uppercase font-weight-bold text-center">
+        from festa signatures beads &copy;2020.
+    </p>
+</footer>
+
+</html>
